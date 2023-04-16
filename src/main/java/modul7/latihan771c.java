@@ -9,5 +9,11 @@ package modul7;
  * @author HP
  */
 public class latihan771c {
-    
+    public static void main(String[] args){
+        String[] hari = {"Senin", "selasa", "Rabu", "Kamis", "Jum'at", "Sabtu", "Minggu"};
+        System.out.println("Hari Dalam Seminggu:");
+        for(int i=0; i<hari.length; i++){
+            System.out.println(hari[i]);
+        }
+    }
 }
