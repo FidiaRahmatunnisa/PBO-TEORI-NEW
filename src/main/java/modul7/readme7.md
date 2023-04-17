@@ -1,14 +1,23 @@
 #latihan771
 
 public class latihan771 {
+
     public static void main(String[] args){
+    
      String[] hari = {"senin", "selasa", "rabu", "kamis", "jum'at", "sabtu", "minggu"};   
+     
      System.out.println("Hari Dalam Seminggu:");
+     
         int i = 0;
+        
      while(i<hari.length){
+     
          System.out.println(hari[i]);
+         
          i++;
+         
      }
+     
     }
 }
 
@@ -26,18 +35,31 @@ while dan array di Java
 #latihan771b
 
 public class latihan771b {
+
     public static void main(String[] args){
+    
         String[] hari = {"Senin", "Selasa", "Rabu", "Kamis", "Jum'at", "Sabtu", "Minggu"};
+        
         System.out.println("Hari Dalam Seminggu:");
+        
         int i = 0;
+        
         do{
+        
             if(i<=hari.length){
+            
                 System.out.println(hari[i]);
+                
                 i++;
+                
             }
+            
         }while(i<hari.length);
+        
     }
+    
 }
+
  program Java ini hampir sama dengan program sebelumnya. Namun, dalam program ini
  menggunakan perulangan do-while untuk mencetak daftar hari dalam seminggu.
 Pertama-tama, seperti program sebelumnya, array hari dibuat dengan tujuh elemen yang 
@@ -57,14 +79,23 @@ do-while dan array di Java.
 #latihan771c
 
 public class latihan771c {
+
     public static void main(String[] args){
+    
         String[] hari = {"Senin", "selasa", "Rabu", "Kamis", "Jum'at", "Sabtu", "Minggu"};
+        
         System.out.println("Hari Dalam Seminggu:");
+        
         for(int i=0; i<hari.length; i++){
+        
             System.out.println(hari[i]);
+            
         }
+        
     }
+    
 }
+
 Program ini merupakan program Java sederhana yang mencetak daftar hari dalam seminggu
  menggunakan array dan perulangan for.
 Pertama-tama, array hari dibuat dengan tujuh elemen yang berisi nama-nama hari dalam 
@@ -81,44 +112,81 @@ dan array di Java
 #latihan772
 
 import java.io.BufferedReader;
+
 import java.io.InputStreamReader;
+
 import java.io.IOException;
+
 import java.util.Arrays;
+
 import java.util.logging.Level;
+
 import java.util.logging.Logger;
 
+
 public class latihan772 {
+
     public static void main(String[] args){
+    
         BufferedReader data = new BufferedReader(new InputStreamReader(System.in));
+        
      int[] nilai = new int[10];
+     
      int i,max,imax;
+     
      max =0;
+     
      imax = 0;
+     
      System.out.println("== Masukan Nilai ==");
+     
             try {
+            
                  for(i=0;i<10; i++){
+                 
                 System.out.print("masukan nilai ke-"+(i+1)+" =");
+                
                 nilai[i] = Integer.parseInt(data.readLine());    
+                
                 }
+                
                  //for(i=0;i<10;i++){
+                 
                  //System.out.println("array yang diinputkan:"+nilai[i]);
+                 
                  //}
+                 
               for(i=0;i<10;i++){
-                  if(nilai[i]>max){
+              
+              
+              if(nilai[i]>max){
+              
                       max = nilai[i];
+                      
                       imax = i;
+                      
                   }
+                  
               }   
+              
               System.out.println("== Hasil Data Nilai ==");
+              
               System.out.println("array yang diinputkan:"+Arrays.toString(nilai));
+              
               System.out.println("nilai terbesar adalah: "+max);
+              
               System.out.println("nilai terbesar ada pada baris ke: "+(imax+1));
+              
          }
+         
             catch (IOException ex) {
+            
                 Logger.getLogger(latihan772.class.getName()).log(Level.SEVERE, null, ex);
+                
      }
      
     }
+    
 }
 
 Program ini merupakan program Java yang meminta pengguna untuk memasukkan 10 nilai 
@@ -141,27 +209,47 @@ program ini akan tergantung pada nilai yang dimasukkan oleh pengguna.
 #latihan772b
 
 import java.util.Arrays;
+
 import javax.swing.JOptionPane;
 
 public class latihan772b {
+
    public static void main(String[] args){
+   
        int[] nilai = new int[10];
+       
        int i,max,imax;
+       
        max = 0;
+       
        imax = 0;
+       
        for(i=0;i<10;i++){
+       
            nilai[i] = Integer.parseInt(JOptionPane.showInputDialog("nilai ke-"+(i+1)));
+           
        }
+       
        for(i=0;i<10;i++){
+       
           if(nilai[i]>max){
+         
               max = nilai[i];
+              
               imax = i;
+              
           }
+          
        }
+       
    JOptionPane.showMessageDialog(null,"\n nilai yang didapatkan "+Arrays.toString(nilai)+
+   
            "\n nilai terbesar :"+max+"\n nilai terbesar terdapat pada baris ke-"+(i));
+           
    }
+   
 }
+
 Program ini juga adalah program Java yang meminta pengguna untuk memasukkan 10 
 integer, mencari nilai terbesar dalam array nilai, dan menampilkan posisi nilai terbesar
 dalam array menggunakan JOptionPane dari Java Swing.
@@ -180,31 +268,53 @@ oleh pengguna.
 #latihan773
 
 public class latihan773 {
+
     public static void main(String[] args){
+    
         String[][] entry =  {{"Florence", "735-1234", "Manila"},         
+        
                             {"Joyce", "983-3333", "Quezon City"},
+                            
                             {"Becca", "456-3322", "Manila"}}; 
+                            
         //int i,j;
+        
         //for(i=0;i<entry.length;i++){
+        
           //  for(j=0;j<entry.length;j++){
+          
             //    System.out.println("Name : "+entry[i][j]);
+            
             //}
+            
         //}
+        
         System.out.println("Name : "+entry[0][0]);
+        
         System.out.println("Tel : "+entry[0][1]);
+        
         System.out.println("Address : "+entry[0][2]);
+        
         System.out.println("\n");
         
         System.out.println("Name : "+entry[1][0]);
+        
         System.out.println("Tel : "+entry[1][1]);
+        
         System.out.println("Address : "+entry[1][2]);
+        
         System.out.println("\n");
         
         System.out.println("Name : "+entry[2][0]);
+        
         System.out.println("Tel : "+entry[2][1]);
+        
         System.out.println("Address : "+entry[2][2]);
+        
     }
+    
 }
+
 Program ini menggunakan array 2 dimensi untuk menyimpan data beberapa entri yang 
 berisi informasi nama, nomor telepon, dan alamat. Data tersebut kemudian ditampilkan pada
 layar menggunakan statement System.out.println().
