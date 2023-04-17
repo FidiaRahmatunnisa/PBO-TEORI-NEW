@@ -1,4 +1,5 @@
 #latihan771
+
 public class latihan771 {
     public static void main(String[] args){
      String[] hari = {"senin", "selasa", "rabu", "kamis", "jum'at", "sabtu", "minggu"};   
@@ -23,6 +24,7 @@ Jadi, program ini akan mencetak daftar hari dalam seminggu menggunakan perulanga
 while dan array di Java
 
 #latihan771b
+
 public class latihan771b {
     public static void main(String[] args){
         String[] hari = {"Senin", "Selasa", "Rabu", "Kamis", "Jum'at", "Sabtu", "Minggu"};
@@ -53,6 +55,7 @@ Jadi, program ini akan mencetak daftar hari dalam seminggu menggunakan perulanga
 do-while dan array di Java.
 
 #latihan771c
+
 public class latihan771c {
     public static void main(String[] args){
         String[] hari = {"Senin", "selasa", "Rabu", "Kamis", "Jum'at", "Sabtu", "Minggu"};
@@ -76,6 +79,7 @@ Jadi, program ini akan mencetak daftar hari dalam seminggu menggunakan perulanga
 dan array di Java
 
 #latihan772
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
@@ -135,6 +139,7 @@ Jadi, program ini akan meminta pengguna untuk memasukkan 10 nilai integer, menca
 program ini akan tergantung pada nilai yang dimasukkan oleh pengguna.
 
 #latihan772b
+
 import java.util.Arrays;
 import javax.swing.JOptionPane;
 
@@ -173,6 +178,7 @@ metode input/output. Output dari program ini juga tergantung pada nilai yang dim
 oleh pengguna.
 
 #latihan773
+
 public class latihan773 {
     public static void main(String[] args){
         String[][] entry =  {{"Florence", "735-1234", "Manila"},         
