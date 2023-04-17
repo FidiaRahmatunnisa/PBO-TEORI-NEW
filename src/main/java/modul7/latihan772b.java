@@ -8,6 +8,27 @@ package modul7;
  *
  * @author HP
  */
+import java.util.Arrays;
+import javax.swing.JOptionPane;
+
 public class latihan772b {
-    
+   public static void main(String[] args){
+       int[] nilai = new int[10];
+       int i,max,imax;
+       max = 0;
+       imax = 0;
+       for(i=0;i<10;i++){
+           nilai[i] = Integer.parseInt(JOptionPane.showInputDialog("nilai ke-"+(i+1)));
+       }
+       for(i=0;i<10;i++){
+          if(nilai[i]>max){
+              max = nilai[i];
+              imax = i;
+          }
+       }
+   JOptionPane.showMessageDialog(null,"\n nilai yang didapatkan "+Arrays.toString(nilai)+
+           "\n nilai terbesar :"+max+"\n nilai terbesar terdapat pada baris ke-"+(i));
+   }
 }
+
+
