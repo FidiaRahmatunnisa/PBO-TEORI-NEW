@@ -8,6 +8,7 @@ package modul11;
  *
  * @author HP
  */
-public class latihan1162 {
-    
+public abstract class latihan1162 { // shape
+    public abstract double getArea();
+    public abstract String getName();
 }

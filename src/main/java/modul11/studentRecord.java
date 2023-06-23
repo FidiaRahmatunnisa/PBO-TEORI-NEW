@@ -115,7 +115,26 @@ public class studentRecord { // kelas
  
 public void print(double eGrade, double mGrade, double sGrade){
     //System.out.println("Name:" + name); 
-    System.out.println("Math Grade:" + mGrade);  
-    System.out.println("English Grade:" + eGrade);  
-    System.out.println("Science Grade:" + sGrade);  } 
+    System.out.println("Math Grade    : " + mGrade);  
+    System.out.println("English Grade : " + eGrade);  
+    System.out.println("Science Grade : " + sGrade);  } 
+
+
+
+// bagian bawah adalah trow exception dari set yang bertipe data selain string
+    void setage() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    void setmathGrade() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    void setscienceGrade() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    void setenglishGrade() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }

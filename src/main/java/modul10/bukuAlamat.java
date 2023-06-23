@@ -23,7 +23,7 @@ import static modul10.DataBukuAlamat.tambah;
      // dibuat objek isi berbentuk array karena akan menampung data sebanyak 100 data yang telah di tentukan index array nya
     DataBukuAlamat[] isi = new DataBukuAlamat[100];
     // index , karena disini kita memainkan indeks, 
-    public int index;
+    public int tambah;
     
     //method masukan data , menggunakan method set -- seakan sia-sia buat method kalau tidak dipanggil 
       //di main method--pikirkan cara manggil method dan akses input scanner dari method--kayaknya 
